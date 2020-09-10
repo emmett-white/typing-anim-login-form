@@ -2,17 +2,17 @@
 /*   Typing anim   */
 /*                 */
 
-new TypeIt("#loading", {
+new TypeIt('#loading', {
     speed: 50,
     waitUntilVisible: true
   })
-    .type("Loading, plrase", {delay: 400})
+    .type('Loading, plrase', {delay: 400})
     .move(-3)
     .delete(1)
     .type('e')
     .move('END')
     .type(' wait...')
-    .go();
+    .go()
 
 
 /*                 */
