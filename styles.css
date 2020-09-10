@@ -1,0 +1,136 @@
+/*                 */
+/*      Tags       */
+/*                 */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+
+    margin: 0;
+    height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+form {
+    display: none;
+
+    width: 450px;
+    height: 300px;
+    border-radius: 8px;
+
+    background-color: rgba(0, 0, 0, .9);
+    box-shadow: 2px 2px 14px #000;
+}
+
+form h1 {
+    color: #e2e2e2;
+    text-align: center;
+    
+    font-size: 22px;
+    margin-top: 35px;
+}
+
+.box input[type="email"] {
+    margin-top: 40px;
+}
+
+form input {
+    display: block;
+    outline: none;
+
+    margin: 10px auto;
+    border: 2px solid rgba(0, 0, 0, .9);
+    border-radius: 8px;
+    padding: 9px;
+    width: 86%;
+
+    transition: .8s;
+}
+
+form input:focus {
+    border: 2px solid rgb(218, 23, 23);
+}
+
+form button {
+    display: block;
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid rgba(0, 0, 0, .9);
+    border-radius: 8px;
+    width: 90%;
+
+    background-color: rgba(0, 0, 0, .9);
+
+    transition: .8s;
+}
+
+form button:hover {
+    border: 2px solid #0ba360;
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+form a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+    display: inline-block;
+    
+    margin: 10px 30px;
+    font-size: 13px;
+    padding: 11px;
+    border: 1px solid rgba(0, 0, 0, .0);
+
+    transition: .8s;
+}
+
+form a:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+
+/*                 */
+/*       IDs       */
+/*                 */
+
+#loading {
+    display: block;
+    color: white;
+    
+    font-size: 3rem;
+    width: 600px;
+}
+
+
+/*                 */
+/*    Resolution   */
+/*                 */
+
+@media only screen and (max-width: 535px) {
+    form {
+        width: 330px;
+    }
+    
+    form a {
+        font-size: 12px;
+        margin: 5px 14px;
+    }
+    
+    #loading {
+        font-size: 2rem;
+        width: 330px;
+    }
+}
